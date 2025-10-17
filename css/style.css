@@ -1214,3 +1214,52 @@ body {
 }
 
 /*# sourceMappingURL=style.css.map */
+/* Sunflower theme overrides */
+.flower__leaf {
+  background-color: #f7c400;
+  background-image: linear-gradient(to top, #ffeb77, #ffd633);
+  box-shadow: inset 0 0 2vmin rgba(255, 255, 255, 0.35);
+}
+
+.flower__white-circle {
+  background-color: #6b3e12;
+}
+
+.flower__white-circle::after {
+  background-image: radial-gradient(circle at 50% 50%, #4a2b0a 0%, #6b3e12 60%, #8b5a2b 100%);
+}
+
+.flower__line {
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.2), transparent, rgba(255, 255, 255, 0.2)),
+    linear-gradient(to top, #0a4d20 10%, #2e7d32, #3fa34d);
+}
+
+.flower__line__leaf {
+  background-image: linear-gradient(to top, rgba(255, 255, 255, 0.15), #3fa34d);
+}
+
+.flower__g-right .leaf,
+.flower__g-fr .leaf {
+  border-left: 2vmin solid #2e7d32;
+  background-image: linear-gradient(to bottom, transparent, var(--dark-color) 60%);
+}
+
+.flower__g-front__leaf {
+  box-shadow: inset 0 2px 1vmin hsla(0, 0%, 100%, 0.18);
+  background-image: linear-gradient(to bottom left, transparent, var(--dark-color)),
+    linear-gradient(to bottom right, #3fa34d 50%, transparent 50%, transparent);
+}
+
+.flower__g-fr__leaf {
+  box-shadow: inset 0 2px 1vmin hsla(0, 0%, 100%, 0.18);
+  background-image: linear-gradient(to bottom left, transparent, var(--dark-color) 98%),
+    linear-gradient(to bottom right, #3fa34d 45%, transparent 50%, transparent);
+}
+
+.flower__grass { /* make grass green instead of white */
+  --c: #2e7d32;
+}
+
+.long-g .leaf { /* deep green long leaves */
+  --c: #2e7d32;
+}
